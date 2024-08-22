@@ -50,7 +50,16 @@
             </div>
 
             <div class="lg:hidden">
-                <img src="assets/Icons/menu.png" alt="Manu">
+                <div class="dropdown dropdown-bottom dropdown-end">
+                    <div tabindex="0" role="button" class=" m-1"><img src="assets/Icons/menu.png" alt=""></div>
+                    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -243,7 +252,7 @@
         </section>
 
         <!-- .............Our Latest Portfolio.......  INCOMPLATE -->
-        <section class="lg:bg-white mt-12 lg:px-10 ">
+        <section class="lg:bg-white mt-12 lg:px-[100px] lg:py-[100px] ">
 
             <div class="">
                 <div class="lg:pl-5 pt-10 text-center">
@@ -256,24 +265,25 @@
 
                     <h2 class="text-3xl lg:text-[40px] font-black mt-4 lg:mt-7">Our Latest Portfolio</h2>
 
-                    <p class="font-semibold mt-8 lg:mt-10 text-zinc-600">
+                    <p class="font-semibold mt-8 lg:mt-10 lg:px-96 text-zinc-600">
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring
                         weathered wood, sleek metal accents.
                     </p>
                 </div>
 
-                <div class="flex flex-wrap">
-                    <div class="lg:grid grid-cols-5 gap-3 mx-8">
+                <div class="lg:mt-8">
+                    <div class="lg:grid grid-cols-[70%,30%] gap-6 mx-8">
 
                         <!-- 1 -->
                         <div
-                            class=" rounded-2xl bg-base-100 shadow  mt-3 text-left lg:flex items-center justify-center gap-3 col-span-4">
+                            class=" rounded-2xl bg-base-100 shadow  mt-3 text-left lg:flex items-center justify-center gap-3 ">
 
-                            <div class="p-6 w-[100%] lg:w-[33%]">
-                                <img width="100%" src="assets/img1.png" alt="Shoes" class="rounded-xl" />
+                            <div class="p-6 w-[100%] lg:w-[40%]">
+                                <img class="w-[100%] lg:h-[270px]" src="assets/img1.png" alt="Shoes"
+                                    class="rounded-xl" />
                             </div>
 
-                            <div class=" p-6 text-left mt-0">
+                            <div class=" p-6 text-left lg:w-[60%] mt-0">
 
                                 <h2 class="text-[20px] font-black">Commercial</h2>
 
@@ -299,24 +309,31 @@
                         </div>
 
                         <!-- 3-->
-                        <div class="card bg-base-100 shadow  p-6 mt-3 text-left">
+                        <div class="card bg-base-100 shadow  p-6 mt-3 text-left lg:hidden">
                             <img src="assets/img5.png" alt="">
 
                         </div>
 
-
                     </div>
 
-                    <div class="lg:grid grid-cols-5 gap-3 mx-8">
+                    <div class="lg:grid grid-cols-[25%,50%,25%] gap-6 lg:mt-6 mx-8">
+                        <!-- ex -->
+                        <div class=" hidden card bg-base-100 shadow  p-6 mt-3 text-left lg:inline">
+                            <img class="w-[100%] h-[100%]" src="assets/img3.png" alt="">
+
+                        </div>
+
+
                         <!-- 4 -->
                         <div
-                            class=" rounded-2xl bg-base-100 shadow  mt-3 text-left lg:flex items-center justify-center gap-3 col-span-2">
+                            class=" rounded-2xl bg-base-100 shadow  mt-3 text-left lg:flex items-center justify-center gap-1">
 
-                            <div class="p-6 w-[100%] lg:w-[70%]">
-                                <img width="100% " height="100%" src="assets/img1.png" alt="Shoes" class="rounded-xl" />
+                            <div class="p-6 lg:w-[50%]">
+                                <img class="w-[100%] lg:h-[270px]" src="assets/img4.png" alt="Shoes"
+                                    class="rounded-xl" />
                             </div>
 
-                            <div class=" p-6 text-left mt-0">
+                            <div class=" p-6 text-left lg:w-[50%] mt-0">
 
                                 <h2 class="text-[20px] font-black">Commercial</h2>
 
@@ -336,16 +353,17 @@
                         </div>
 
                         <!-- 5 -->
-                        <div class="card bg-base-100 shadow  p-6 mt-3 text-left">
+                        <div class="card bg-base-100 shadow  p-6 mt-3 text-left lg:hidden">
                             <img src="assets/img3.png" alt="">
 
                         </div>
 
                         <!-- 6 -->
-                        <div class="card bg-base-100 shadow p-6 mt-3 text-left lg:hidden">
-                            <img src="assets/img5.png" alt="">
+                        <div class="card bg-base-100 shadow p-6 mt-3 text-left lg:">
+                            <img class="w-[100%] h-[100%]" src="assets/img5.png" alt="">
 
                         </div>
+
                     </div>
                 </div>
 
@@ -532,7 +550,7 @@
 
                     <div class=" form-control col-span-2">
                         <textarea class="textarea rounded-3xl h-60 mt-6 text-xl textarea-bordered"
-                            placeholder="Write your message here"></textarea>
+                            placeholder="Write your message here" required></textarea>
                     </div>
 
 
@@ -561,7 +579,7 @@
 
         <div class="flex items-center gap-[8px]">
             <img class=" rounded-[50%] w-[35px] " src="assets/Icons/arrow .svg" alt="^">
-            <h1 class="text-[28px] font-bold">Rinterio</h1>
+            <h1 class="text-[40px] font-bold">Rinterio</h1>
         </div>
 
         <p class="font-bold text-[#737373] px-28 lg:px-96">
@@ -584,8 +602,8 @@
         <button class=" mx-[auto] text-black bg-green-400 text-center flex items-center justify-center  gap-2 px-[110px] py-[10px] rounded-3xl mt-5 text-xl font-black 
         ">Book Consult
 
-            <img class="bg-black p-2 rounded-[50%] w-[35px]"
-                src="assets/Icons/icons8-arrow-upper-right-48.png " alt="^">
+            <img class="bg-black p-2 rounded-[50%] w-[35px]" src="assets/Icons/icons8-arrow-upper-right-48.png "
+                alt="^">
         </button>
 
     </footer>
